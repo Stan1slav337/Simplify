@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Transformări</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="Style.css">
+</head>
+<body>
+
+<p> Descriere: Programul ia ca input orice expresie și o transformă în FNN/FND/FNC.</p>
+
+Input: <input type="text" id="myText" value="" size="40"> <button onclick="buildExpression()">Run</button><button onclick="clearInput()">Clear</button>
+
+<p>Caractere speciale:  <br>
+<button onclick="addCharacter('¬')">¬</button><button onclick="addCharacter('∧')">∧</button><button onclick="addCharacter('∨')">∨</button><button onclick="addCharacter('⇒')">⇒</button><button onclick="addCharacter('⇔')">⇔</button><button onclick="addCharacter('⊤')">⊤</button><button onclick="addCharacter('⊥')">⊥</button> <br>
+<button onclick="addCharacter('(')">(</button><button onclick="addCharacter(')')">)</button><button onclick="addCharacter('P')">P</button><button onclick="addCharacter('Q')">Q</button><button onclick="addCharacter('R')">R</button><button onclick="addCharacter('S')">S</button>
+</p>
+
+<p>Setări: <br>
+<input type="checkbox" id="myTable">  Validitatea și satisfiabilitatea formulei prin tabel <br>
+<input type="checkbox" id="myTableFND">  FND din tabelul de adevăr <br>
+<input type="checkbox" id="myTransforms" checked>  FNN / FND / FNC prin echivalențe logice <br>
+<input type="checkbox" id="myTransformsWithTree">  FNN / FND / FNC prin echivalențe logice cu arbori pentru formule<br>
+</p>
+
+<pre>Tema pentru acasă:
+Ex.1: <button onclick="buildExpression(0, 0)">(a)</button><button onclick="buildExpression(0, 1)">(b)</button><button onclick="buildExpression(0, 2)">(c)</button><button onclick="buildExpression(0, 3)">(d)</button>
+Ex.2: <button onclick="buildExpression(1, 0)">(a)</button><button onclick="buildExpression(1, 1)">(b)</button><button onclick="buildExpression(1, 2)">(c)</button><button onclick="buildExpression(1, 3)">(d)</button><button onclick="buildExpression(1, 4)">(e)</button>
+Ex.3: <button onclick="buildExpression(2, 0)">Rezolvare</button>
+Ex.4: <button onclick="buildExpression(3, 0)">Rezolvare</button>
+Ex.5: <button onclick="buildExpression(4, 0)">Rezolvare</button>
+</pre>
+
+<div id="myOutput"></div>
+
+<script type="text/javascript" src="Program.js"></script>             
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+p {
+	font-size: 1.15rem;
+}
+
+table {
+    font-family: helvetica;
+    color: #555;
+    border-collapse: collapse;
+    font-size: 14pt;
+    text-align: center;
+}
+
+table th {
+	font-weight: bold;
+	padding: 5px 10px 5px 10px;
+}
+
+table td,
+table th {
+	border-left: 1px solid rgb(210, 210, 221);
+	border-right: 1px solid rgb(210, 210, 221);
+	padding: 5px 10px 5px 10px;
+}
+
+table td {
+	font-weight: 100;
+}
+
+table td:last-child {
+	font-weight: 600;
+}
+
+table tr,
+table th {
+	border-top: 1px solid rgb(170, 170, 187);
+	border-bottom: 1px solid rgb(170, 170, 187);
+}
+
+div.myFNN p,
+div.myFND p,
+div.myFNC p {
+	font-family: Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
