@@ -987,6 +987,12 @@ function transform(results) {
 	
 		}
 		else {
+			
+			edit_id = ids[t.value == disjunct_ch ? 1 : 2];
+			paragraph = document.createElement('p');
+			paragraph.innerHTML = treeToString(dummy.children[0]);
+			document.getElementById(edit_id).appendChild(paragraph);
+			drawTree();
 	
 			edit_id = ids[t.value == disjunct_ch ? 2 : 1];
 			paragraph = document.createElement('p');
@@ -995,12 +1001,6 @@ function transform(results) {
 			find_to_simplify(dummy.children[0]);
 			t = dummy.children[0];
 			paragraph.innerHTML = treeToString(dummy.children[0]);
-			drawTree();
-			
-			edit_id = ids[t.value == disjunct_ch ? 2 : 1];
-			paragraph = document.createElement('p');
-			paragraph.innerHTML = lungime(t) < len ? treeToString(dummy.children[0]) : formula;
-			document.getElementById(edit_id).appendChild(paragraph);
 			drawTree();
 	
 		}
